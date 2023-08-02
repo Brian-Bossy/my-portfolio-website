@@ -15,6 +15,7 @@
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
@@ -42,7 +43,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               </li>
         </ul>
         <button class="burger-menu" id="burger-menu">
-            <ion-icon class="bars" name="menu-outline"></ion-icon>
+            <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
      </nav>
 
@@ -124,11 +125,20 @@ data-aos-once="false"
 data-aos-anchor-placement="top-center">
 <h2 class="projects-title">Some of my Recent Projects</h2>
 <div class="projects-container">
+<!-- To-do list -->
+<div class="project-container project-card">
+
+    <img src="./brian portfolio/assets/to-do-list-react-app.png"  loading="lazy" alt="todo list web app" class="project-pic" />
+    <h3 class="project-title">To-do List Web App</h3>
+    <p class="project-details">React,Vanilla CSS3,Jquery</p>
+       <a href="https://brian-bossy.github.io/To-Do-List/"  target="_blank" class="project-link">Live site of project</a>
+    </div>
+
 
     <div class="project-container project-card">
         <img src="./brian portfolio/assets/YouTube.png"  loading="lazy" alt="youtube clone" class="project-pic" />
         <h3 class="project-title">Youtube clone</h3>
-        <p class="project-details">I made this youtube clone using html and css</p>
+        <p class="project-details">HTML5,CSS3</p>
            <a href="https://brian-bossy.github.io/Youtube-clone-with-HTML-and-CSS/"  target="_blank" class="project-link">Live site of project</a>
         </div>
     
@@ -138,27 +148,37 @@ data-aos-anchor-placement="top-center">
     <div class="project-container project-card">
 <img src="./brian portfolio/assets/Brian-dev-weather-app (2).png" alt="weather app" loading="lazy"  class="project-pic" />
 <h3 class="project-title">Weather web app</h3>
-<p class="project-details">I built this weather web application  using html5,css3 and JavaScript</p>
+<p class="project-details">HTML5,CSS3,Vanilla JS,API</p>
    <a href="https://weather-web-app-8uga.onrender.com" target="_blank" class="project-link">Live site of project</a>
 </div>
 
 
-
-    <div class="project-container project-card">
-        <img src="./brian portfolio/assets/image-search-app (2).png"  loading="lazy" alt="Image Search app class="project-pic" />
-        <h3 class="project-title">Image-Search web app</h3>
-        <p class="project-details">I built this weather web application  using html5,css3 and JavaScript</p>
-           <a href="https://brian-bossy.github.io/image-app/"  target="_blank" class="project-link">Live site of project</a>
-        </div>
-
+<div class="project-container project-card">
+<img src="./brian portfolio/assets/React-App.png"  loading="lazy" alt="drum-machine" class="project-pic" />
+<h3 class="project-title">Drum Machine</h3>
+<p class="project-details">React and Bootstrap</p>
+   <a href="https://brian-bossy.github.io/drum-machine/"  target="_blank" class="project-link">Live site of project</a>
+</div>
 
 
 
+<div class="project-container project-card">  
+<img src="./brian portfolio/assets/Freecodecamp-quote-Generator.png"  loading="lazy" alt="random-quote generator" class="project-pic" />
+<h3 class="project-title">Random-Quote generator</h3>
+<p class="project-details">Vanilla JS,Vanilla CSS3,Jquery</p>
+   <a href="https://brian-bossy.github.io/Random-Quote-Machine/"  target="_blank" class="project-link">Live site of project</a>
+</div>
 
 
 
 
 
+<div class="project-container project-card">
+<img src="./brian portfolio/assets/FreeCodeCamp-Markdown-Previewer.png"  loading="lazy" alt="markdown previewer" class="project-pic" />
+<h3 class="project-title">markdown previewer</h3>
+<p class="project-details">Vanilla JS,Bootstrap</p>
+   <a href="https://brian-bossy.github.io/Markdown-Previewer/"  target="_blank" class="project-link">Live site of project</a>
+</div>
 
 
 
@@ -170,14 +190,7 @@ data-aos-anchor-placement="top-center">
 </div>
 </section>
 
-<section class="contact" id="contact" data-aos="fade-in" data-aos="fade-up"
-data-aos-offset="200"
-data-aos-delay="50"
-data-aos-duration="1000"
-data-aos-easing="ease-in-out"
-data-aos-mirror="true"
-data-aos-once="false"
-data-aos-anchor-placement="top-center">
+<section class="contact" id="contact" >
 <h2>Get in touch with me</h2>
 <div class="contact-form-container">
     <div class="contact-form">
@@ -205,7 +218,14 @@ data-aos-anchor-placement="top-center">
 </section>
 
 
-<div class="socials">
+<div class="socials data-aos="fade-in" data-aos="fade-up"
+data-aos-offset="200"
+data-aos-delay="50"
+data-aos-duration="1000"
+data-aos-easing="ease-in-out"
+data-aos-mirror="true"
+data-aos-once="false"
+data-aos-anchor-placement="top-center"">
     <a href="#" target="_blank">
         <img src="./brian portfolio/assets/icons8-twitter.gif" alt="twitter" loading="lazy" class="socicon" />
     </a>
@@ -218,7 +238,7 @@ data-aos-anchor-placement="top-center">
         <img src="./brian portfolio/assets/icons8-instagram.gif" alt="instagram" loading="lazy" class="socicon" />
     </a>
 </div>
-<footer>
+<footer >
     <p class="copy">&copy; Copyright2023</p>
     <p class="copy">Built with &#x2661; by <a href="#" target="_blank">Brian Bossy</a></p>
 </footer>

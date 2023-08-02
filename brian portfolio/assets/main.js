@@ -10,27 +10,33 @@ scrollUp.addEventListener("click", () => {
 });
 
 
-
 document.addEventListener("DOMContentLoaded", () => {
- const burger = document.querySelector("#burger-menu");
- const ul = document.querySelector("nav ul");
- const nav = document.querySelector("nav");
+    const burger = document.querySelector(".burger-menu"); // Add a period before "burger-menu"
+    const ul = document.querySelector("nav ul");
 
-burger .addEventListener("click", () => {
-    ul.classList.toggle("show");
+    burger.addEventListener("click", () => {
+        ul.classList.toggle("show");
+    });
+
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach((link) =>
+        link.addEventListener("click", () => {
+            ul.classList.remove("show");
+        })
+    );
 });
-});
 
 
-
-const navLink = document.querySelectorAll(".nav-link");
-
-navLink.forEach((link) => 
-link.addEventListener("click", () => {
-    ul.classList.remove("show");
-}));
 
 
 
 
 AOS.init();
+
+
+
+// JavaScript to handle the burger menu toggle
+document.getElementById('burger-menu').addEventListener('click', function() {
+    const menuList = document.querySelector('.menu-list');
+    menuList.classList.toggle('active');
+});

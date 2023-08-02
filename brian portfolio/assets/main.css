@@ -75,6 +75,7 @@ nav a:hover{
     border-bottom: 2px solid var(--secondary-color);
 }
 
+
 nav ul{
     display: flex;
     gap:1.9rem;
@@ -170,11 +171,12 @@ box-shadow: 0px 2px 15px 2px var(--primary-color);
 
 }
 .project-pic {
-    width: 30px;
-    height: 30px;
+    width: 80px;
+    height: 80px;
 }
 .projects-container {
-    display: flex;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 justify-content: center;
 }
@@ -292,10 +294,12 @@ footer {
 }
 
 @media screen and (max-width: 720px) {
+
+    
     nav {
         padding: 1.5rem 1rem;
     }
-    nav ul {
+    .navigation {
         position: fixed;
         background-color: var(--bg-color);
         flex-direction: column;
@@ -305,6 +309,9 @@ footer {
         text-align: center;
         transform: translateX(120%);
         transition: transform 0.5s ease-in;
+    }
+    .navigation.active {
+        transform: translateX(0);
     }
     nav ul li {
         margin: 8px;
@@ -318,6 +325,7 @@ footer {
     }
     nav .twitter-tick{
         margin-right: 96px;
+        display:none;
     }
     .hero {
         margin-top: 30px;
@@ -352,10 +360,14 @@ footer {
             height: 5.25rem;
         }
         .projects-container {
-            flex-direction: column;
+           grid-template-columns: 1fr ;
         }
         .project-container {
             width: 20.87rem;
+        }
+        .project-pic{
+            width:180px;
+            height: 180px;
         }
         .contact-form-container {
             max-width: 23.75rem;
